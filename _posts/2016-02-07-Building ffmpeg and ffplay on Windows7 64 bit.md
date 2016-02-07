@@ -20,7 +20,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts
 
 - Make sure to use mingw64_shell.bat to have the correct MinGW-w64 environment. Run following commands in MinGW-w64 to install dependencies.
 
-~~~~
+~~~~ bash
     #normal msys2 packages
     pacman -S make pkgconfdiffutils
     # mingw-w64 packages and toolchains
@@ -29,7 +29,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts
 
 ##Download ffmpeg code##
 
-~~~~
+~~~~ bash
     mkdir ffmpeg
     cd ffmpeg
     git clone https://github.com/FFmpeg/FFmpeg.git
@@ -38,7 +38,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts
 ##Build instructions for ffmpeg## 
 Ffmpeg can be built directly using following commands. If you wish to compile shared libraries, add --enable-shared to your configure options.
 
-~~~~
+~~~~ bash
     ./configure --toolchain=msvc
     make
     make install
@@ -55,7 +55,7 @@ C:\msys64\mingw64\lib
 
 - Open file C:\msys64\mingw64\bin\sdl-config and modify following lines
 
-~~~~bash 
+~~~~ bash 
         --libs)
   echo -L${exec_prefix}/lib -lSDLmain -lSDL
         ;;
@@ -67,6 +67,6 @@ C:\msys64\mingw64\lib
 
 - Run following commands : 
 
-~~~~
+~~~~ bash
 ./configure --enable-ffplay --toolchain=msvc --disable-shared --enable-static --enable-sdl --extra-ldflags="-Wl,-add-stdcall-alias" --enable-memalign-hack --disable-ffmpeg --pkg-config=sdl-config
 ~~~~
