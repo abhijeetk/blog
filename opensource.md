@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenScontributions.
+title: OpenSource contributions.
 permalink: /os/
 ---
 
