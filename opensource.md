@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Open Source contributions.
-permalink: /opensource/
+title: OpenScontributions.
+permalink: /os/
 ---
 
 I started working on Webkit open source project in starting on year 2010. I worked on 
