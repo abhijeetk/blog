@@ -125,7 +125,7 @@ Pipeline is completely pull-based and relies on the system clock (vsync) to driv
 - 	FFmpeg works on buffers provided by networks(bufferDataSource)
 - 	FFmpeg can be decomposed to run in threaded implementation for demuxing, decoding and rendering.
 - 	Caching of data is implemented at each filter level.
-- 	HTML Media Elements like <audio> <video> and Web audio are depends on chromium-ffmpeg integration. This Media elements uses underlying playback engine (pipeline) and media framework (Ffmpeg).
+- 	HTML Media Elements like audio, video and Web audio are depends on chromium-ffmpeg integration. This Media elements uses underlying playback engine (pipeline) and media framework (Ffmpeg).
 - 	Ffmpeg supports almost all pixel format but Chromium pipeline supports only famous pixel formats.
 
 
