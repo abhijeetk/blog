@@ -36,7 +36,7 @@ Pipeline is completely pull-based and relies on the system clock (vsync) to driv
 
 ***State machine of pipeline:***
 
-![alt text]({{ site.baseurl }}/images/Video-rendering-in-chromium-nwjs/state-machine.png "{{ page.title }}")
+![alt text]({{ site.baseurl }}/images/Video-rendering-in-chromium-nwjs/state_machine.png "{{ page.title }}")
 
 
 **Working of filters in pipeline**
