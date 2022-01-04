@@ -199,7 +199,8 @@ img {
 }
 
 .site-info {
-  float: left;
+  // ABHIJEET : Bring avtar and description in same line
+  // float: left;
 
   @include mobile {
     float: none;
