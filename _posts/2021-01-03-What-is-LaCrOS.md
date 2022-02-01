@@ -62,7 +62,7 @@ Next obvious question would be how to build and run the LaCrOS Browser and contr
 ## Build & Run
 Refer to [Chromium OS on Linux (linux-chromeos)](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/chromeos_build_instructions.md#chromium-os-on-linux-linux_chromeos) before building code
 
-You can download a GN args necessary to build a LaCrOS on linux-desktop from an already running `linux-lacros-rel` build bot.
+You can download a [GN](https://www.chromium.org/developers/gn-build-configuration/) args necessary to build a LaCrOS on linux-desktop from an already running `linux-lacros-rel` build bot.
 
 ```
 chromium/src$tools/mb/mb.py gen -m tryserver.chromium.chromiumos -b \'linux-lacros-rel' out/linux-lacros-rel
@@ -82,14 +82,14 @@ symbol_level = 0
 target_os = "chromeos"
 use_goma = true
 ```
-`also_build_ash_chrome = true` tells a ninja to build Ash-Chrome(wayland server) along with LaCrOS Browser(wayland client)
+`also_build_ash_chrome = true` tells a [ninja](https://chromium.googlesource.com/chromium/src.git/+/56.0.2924.56/docs/ninja_build.md) to build Ash-Chrome(wayland server) along with LaCrOS Browser(wayland client)
 
 * ### Build
 To build the code run the below command from your chromium source directory.
 ```
 chromium/src$autoninja -C out/linux-lacros-rel/ chrome all -j500
 ```
-Ash-Chrome is located at location `out/linux-lacros-rel/ash_clang_x64/test_ash_chrome` and LaCrOS Browser is located at location `out/linux-lacros-rel/chrome` after build
+After build, Ash-Chrome is located at location `out/linux-lacros-rel/ash_clang_x64/test_ash_chrome` and LaCrOS Browser is located at location `out/linux-lacros-rel/chrome`.
 
 * ### Run
 To run the use the below command
@@ -155,11 +155,5 @@ See the working of the Multi-Desk in LaCrOS in the video below.
 
 - WebUi Tab Strip
 This feature adds a new tab bar to the browser, featuring page thumbnail previews and a touch friendly UI. My colleague [Antonio](mailto:tonikitoo@igalia.com) has contributed to an implementation of this feature.
-See the working of the WebUi Tab Strip in LaCrOS in the video below.
-
-<figure class="video_container">
-  <iframe src="<update-link-here>" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
 
 Last but not least, our Chromium team is also working in parallel on fixing several window manager integration issues as part of this work, so please stay tuned for more updates on our efforts related to LaCrOS development :)
