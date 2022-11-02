@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improve disk read performance
+title: Improving disk read performance
 ---
 
 When I started working on analyzing the startup time of a browser, I didn't have an idea where to start. For me, Performance was a number game and trial-n-error approach. The challenge I was looking into is described in bug [1270977](https://bugs.chromium.org/p/chromium/issues/detail?id=1270977), in which the chrome binary hosted on two different partitions behaved differently.
