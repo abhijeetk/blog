@@ -65,12 +65,12 @@ In the CEFClient application, we need to create a sandbox object and pass it to 
 
 The following call stack illustrates how CEFClient code calls into CEF, ultimately transitioning into the Chromium environment to configure the sandbox.
 
-![](https://notes.igalia.com/uploads/bd290d80-d51f-4772-8e24-dc57ee73ba47.png)
+![]({{ site.baseurl }}/images/Exploring-sandboxing-in-CEF-and-CEFSharp/bd290d80-d51f-4772-8e24-dc57ee73ba47.png)
 
 
 The CEF test application (CEFClient) successfully launches a sandboxed CEF, which is verified by loading the ```chrome://sandbox``` URL.
 
-![](https://notes.igalia.com/uploads/cb0b3336-4af7-49b1-82ed-2e1abccc2e38.png)
+![]({{ site.baseurl }}/images/Exploring-sandboxing-in-CEF-and-CEFSharp/cb0b3336-4af7-49b1-82ed-2e1abccc2e38.png)
 
 ---
 
