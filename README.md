@@ -1,3 +1,7 @@
+# Local developement
+- Followed steps at https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-20-04
+- `jekyll build` instead of `jekyll serve` to generate files.
+
 # Jekyll Now
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
