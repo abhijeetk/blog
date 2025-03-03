@@ -43,7 +43,10 @@ This enables Chromium to use the OpenXR runtime for WebXR applications.
 ### Launch WebVR application
 Launch chromium and Open : https://immersive-web.github.io/webxr-samples/immersive-vr-session.html
 
-![output](https://matrix.igalia.com/_matrix/media/v3/download/igalia.com/PBDrNUfMiATtyGJiThKkfdMz?allow_redirect=true)
+![output]({{ site.baseurl }}/images/WebXR-on-Windows/output.jpg "{{ page.title }}")
 
 ### CallStack
+When we call `navigator.xr.requestSession("immersive-vr");` from Javascript, below call stack get triggered.
 
+
+![callstack]({{ site.baseurl }}/images/WebXR-on-Windows/callstack.png "{{ page.title }}")
